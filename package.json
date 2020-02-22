@@ -1,0 +1,25 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "User will answer questions and a PDF will be created with their information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelly-bazella/Profile-Generator.git"
+  },
+  "author": "Kelly Bazella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kelly-bazella/Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/kelly-bazella/Profile-Generator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
+    "inquirer": "^7.0.4"
+  }
+}
