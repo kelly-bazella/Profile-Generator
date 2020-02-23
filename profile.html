@@ -1,32 +1,4 @@
-const colors = {
-  green: {
-    wrapperBackground: "#E6E1C3",
-    headerBackground: "#C1C72C",
-    headerColor: "black",
-    photoBorderColor: "black"
-  },
-  blue: {
-    wrapperBackground: "#5F64D3",
-    headerBackground: "#26175A",
-    headerColor: "white",
-    photoBorderColor: "#73448C"
-  },
-  pink: {
-    wrapperBackground: "#879CDF",
-    headerBackground: "#FF8374",
-    headerColor: "white",
-    photoBorderColor: "#FEE24C"
-  },
-  red: {
-    wrapperBackground: "#DE9967",
-    headerBackground: "#870603",
-    headerColor: "white",
-    photoBorderColor: "white"
-  }
-};
-
-function generateHTML(info) {
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -197,12 +169,12 @@ function generateHTML(info) {
           <div class="row">
             <div class="col">
               <div class="photo-header">
-                <img src="${info.avi}">
+                <img src="https://avatars0.githubusercontent.com/u/57513235?v=4">
                 <h2>Hello!</h2>
-                <h2>My name is ${info.fullname}</h3>
-                <h5>Currently @ ${info.company}</h5>
+                <h2>My name is Kelly Bazella</h3>
+                <h5>Currently @ Student</h5>
                 <div class="links-nav">
-                  <p>${info.location} | <a href = "${info.linkedin}">LinkedIn</a> |  <a href = "${info.githuburl}">GitHub</a></p>
+                  <p>Minneapolis, MN | <a href = "https://www.linkedin.com/in/kellybazella/">LinkedIn</a> |  <a href = "undefined">GitHub</a></p>
                   <div class="nav-link"></div>
                 </div>
               </div>
@@ -211,30 +183,30 @@ function generateHTML(info) {
         </br>
           <div class="row">
             <div class="col">
-              <h3>${info.bio}</h3>
+              <h3>Aspiring front-end developer. Currently enrolled at the University of Minnesota Coding Bootcamp. </h3>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <div class="card" style="background-color: ${info.color}">
+              <div class="card" style="background-color: red">
                 <h3>Public Repositories</h3>
-                <h4>${info.repos}</h4>
+                <h4>9</h4>
               </div>
-              <div class="card" style="background-color: ${info.color}">
+              <div class="card" style="background-color: red">
                 <h3>Followers</h3>
-                <h4>${info.followers}</h4>
+                <h4>5</h4>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <div class="card" style="background-color: ${info.color}">
+              <div class="card" style="background-color: red">
                 <h3>GitHub Stars</h3>
-                <h4>${info.star}</h4>
+                <h4>0</h4>
               </div>
-              <div class="card" style="background-color: ${info.color}">
+              <div class="card" style="background-color: red">
                 <h3>Following</h3>
-                <h4>${info.following}</h4>
+                <h4>5</h4>
               </div>
             </div>
           </div>
@@ -242,6 +214,4 @@ function generateHTML(info) {
       </main>
     </body>
   </html>
-  `
-        }
-        module.exports=generateHTML;
+  
